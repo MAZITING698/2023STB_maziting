@@ -21,7 +21,7 @@ Client_Secret <- "ipuf9u0_9k"
 
 #뉴스 URL 작성(UTF-8로 암호화, API 요청할 URL 정의, 검색결과는 20로 요청)
 query <- URLencode(iconv("아모레", "UTF-8"))
-url <- paste(searchUrl, "?query=", query, "&display=20", sep="")
+url <- paste(searchUrl, "?query=", query, "&display=100&start=1&sort=sim", sep="")
 
 #문서 다운로드_URI 다운로드하기
 doc <- getURL(url, 
